@@ -16,10 +16,10 @@ services:
     volumes:
       - ${POSTGRES_DATA_PATH}:/var/lib/postgresql/data
     environment:
-      # timezone inside container
+    # timezone inside container
       - TZ
 
-      # necessary Postgres options/variables
+    # necessary Postgres options/variables
       - POSTGRES_USER
       - POSTGRES_PASSWORD
       - POSTGRES_DB
